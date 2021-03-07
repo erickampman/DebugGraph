@@ -6,12 +6,40 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E442C71625F5382300F76302 /* DebugGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = E442C71525F5382300F76302 /* DebugGraph.h */; };
+		E442C71E25F5386600F76302 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E442C71D25F5386600F76302 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E442C71925F5386600F76302 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E442C70E25F5380C00F76302 /* libDebugGrpah.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDebugGrpah.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E442C71525F5382300F76302 /* DebugGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugGraph.h; sourceTree = "<group>"; };
+		E442C71B25F5386600F76302 /* DebugGraphTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DebugGraphTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E442C71D25F5386600F76302 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E442C72225F53E7E00F76302 /* Info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Info.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E442C70C25F5380C00F76302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E442C71825F5386600F76302 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -24,6 +52,9 @@
 		E442C70525F5380C00F76302 = {
 			isa = PBXGroup;
 			children = (
+				E442C71525F5382300F76302 /* DebugGraph.h */,
+				E442C72225F53E7E00F76302 /* Info.txt */,
+				E442C71C25F5386600F76302 /* DebugGraphTest */,
 				E442C70F25F5380C00F76302 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -32,8 +63,17 @@
 			isa = PBXGroup;
 			children = (
 				E442C70E25F5380C00F76302 /* libDebugGrpah.dylib */,
+				E442C71B25F5386600F76302 /* DebugGraphTest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E442C71C25F5386600F76302 /* DebugGraphTest */ = {
+			isa = PBXGroup;
+			children = (
+				E442C71D25F5386600F76302 /* main.cpp */,
+			);
+			path = DebugGraphTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -43,6 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E442C71625F5382300F76302 /* DebugGraph.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +107,23 @@
 			productReference = E442C70E25F5380C00F76302 /* libDebugGrpah.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		E442C71A25F5386600F76302 /* DebugGraphTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E442C71F25F5386600F76302 /* Build configuration list for PBXNativeTarget "DebugGraphTest" */;
+			buildPhases = (
+				E442C71725F5386600F76302 /* Sources */,
+				E442C71825F5386600F76302 /* Frameworks */,
+				E442C71925F5386600F76302 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DebugGraphTest;
+			productName = DebugGraphTest;
+			productReference = E442C71B25F5386600F76302 /* DebugGraphTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -75,6 +133,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					E442C70D25F5380C00F76302 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					E442C71A25F5386600F76302 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -93,6 +154,7 @@
 			projectRoot = "";
 			targets = (
 				E442C70D25F5380C00F76302 /* DebugGrpah */,
+				E442C71A25F5386600F76302 /* DebugGraphTest */,
 			);
 		};
 /* End PBXProject section */
@@ -102,6 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E442C71725F5386600F76302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E442C71E25F5386600F76302 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +315,26 @@
 			};
 			name = Release;
 		};
+		E442C72025F5386600F76302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R28W7FR6SE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E442C72125F5386600F76302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R28W7FR6SE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -262,6 +352,15 @@
 			buildConfigurations = (
 				E442C71325F5380C00F76302 /* Debug */,
 				E442C71425F5380C00F76302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E442C71F25F5386600F76302 /* Build configuration list for PBXNativeTarget "DebugGraphTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E442C72025F5386600F76302 /* Debug */,
+				E442C72125F5386600F76302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
